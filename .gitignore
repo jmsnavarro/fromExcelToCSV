@@ -1,6 +1,4 @@
 *.csv
-*.xls
-*.xlsx
 *.log
 *.txt
 *.tmp
