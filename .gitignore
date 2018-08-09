@@ -1,0 +1,10 @@
+*.csv
+*.xls
+*.xlsx
+*.log
+*.txt
+*.tmp
+venv*/
+*.tar
+*.tar.gz
+*.zip
