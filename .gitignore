@@ -3,6 +3,4 @@
 *.txt
 *.tmp
 venv*/
-*.tar
-*.tar.gz
-*.zip
+.vscode
