@@ -36,9 +36,13 @@ from datetime import timedelta, datetime    # to calculate runtime
 import time
 
 # 3rd party module
-from xlrd import open_workbook              # to read Excel worksheets 
-                                            # https://pypi.org/project/xlrd
-                                            # http://xlrd.readthedocs.io
+# from xlrd import open_workbook              # to read Excel worksheets 
+#                                             # https://pypi.org/project/xlrd
+#                                             # http://xlrd.readthedocs.io
+
+package_path = 'venv3.6.6\\packages\\xlrd-1.1.0'
+sys.path.append(os.path.join(os.getcwd(), package_path))
+import xlrd
 
 # format month name
 def getNumMonthVal(monthName):
@@ -81,7 +85,7 @@ def main():
         logging.info(msg)
         sys.exit()
     else:
-        wb = open_workbook(SRC_FILENAME)
+        wb = xlrd.open_workbook(SRC_FILENAME)
         sheet = wb.sheet_by_index(0)
         reportYear = int(sheet.cell_value(2, 4))
         reportMonth = getNumMonthVal(sheet.name)
