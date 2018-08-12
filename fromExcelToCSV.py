@@ -40,7 +40,7 @@ import time
 #                                             # https://pypi.org/project/xlrd
 #                                             # http://xlrd.readthedocs.io
 
-package_path = 'venv3.6.6\\packages\\xlrd-1.1.0'
+package_path = 'packages\\xlrd-1.1.0'
 sys.path.append(os.path.join(os.getcwd(), package_path))
 import xlrd
 
