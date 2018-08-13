@@ -77,9 +77,9 @@ def getNumMonthVal(monthName):
 # main definition
 def main():
     SRC_FILENAME = 'food_menu.xlsx'
-    file = glob.glob(os.path.join(SRC_FILENAME))
+    f = glob.glob(os.path.join(SRC_FILENAME))
 
-    if not file:
+    if not f:
         msg = "Nothing to process. Cannot find {} file.".format(SRC_FILENAME)
         print("{}: {}\n".format(logging.info.__name__.upper(), msg))
         logging.info(msg)
@@ -106,8 +106,8 @@ def main():
                                         os.path.splitext(SRC_FILENAME)[0].upper()
                                     )
 
-        with open(OUT_FILENAME, "w", newline="") as file:
-            writer = csv.writer(file, delimiter = "|")
+        with open(OUT_FILENAME, "w", newline="") as f:
+            writer = csv.writer(f, delimiter = "|")
 
             typeMenu = ''
             row = []
@@ -139,7 +139,7 @@ def main():
         if rowCount > 0:
             msg = "Done copying {} row(s) to {}".format(rowCount, OUT_FILENAME)
         else:
-            msg = "No rows to fetch."
+            msg = "No rows to collect."
 
         elapsedTime = timedelta(seconds = round(time.time() - startTime_Main))
         print("\nSUMMARY: {} | Elapsed time {}\n".format(msg, elapsedTime))
