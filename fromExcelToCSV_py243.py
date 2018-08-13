@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 """ Tool to Convert Excel file to CSV
-# exceltocsv_py24.py
+# fromExcelToCSV_py243.py
 A terminal script written in Python that converts Excel files to CSV.
 Developed using Visual Studio Code with Python extension.
 Based from https://dzone.com/articles/using-python-to-extract-excel-spreadsheet-into-csv
@@ -26,7 +26,7 @@ YYYYMMsrc_filename.csv
 (e.g. 201801FREQUENT_TRAVELER_MONTHLY.csv)
 
 YYYYMMDD_HHMMHH_exceltocsv.py.log
-(e.g. 20180805_070007_exceltocsv.py.log)
+(e.g. 20180805_070007_fromExcelToCSV_py243.log)
 """
 
 import csv
