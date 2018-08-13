@@ -80,7 +80,7 @@ def getnumericmonth(monthname):
 
 # main definition
 def main():
-    src_filename = 'FREQUENT_TRAVELER_MONTHLY.xls'
+    src_filename = 'food_menu.xls'
     f = glob.glob(os.path.join(src_filename))
 
     if not f:
