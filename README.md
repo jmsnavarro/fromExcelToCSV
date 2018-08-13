@@ -4,9 +4,7 @@ A terminal script written in Python that reads Excel rows and export to a pipe-d
 
 Developed using Visual Studio Code with Python extension.
 
-# For python 2.4.3
-
-Run fromExcelToCSV_py243.py
+For python 2.4.3, please run fromExcelToCSV_py243.py
 
 ## Source file requirements
 1. Source must be placed on the same directory as the python script
