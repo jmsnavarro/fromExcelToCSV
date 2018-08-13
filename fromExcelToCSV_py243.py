@@ -117,7 +117,7 @@ def main():
             rowcount = 0
             for row_id in range(sheet.nrows):
                 # get type of menu
-                if not isinstance(sheet.cell_value(row_id, 0), str):
+                if isinstance(sheet.cell_value(row_id, 0), str):
                     if sheet.cell_value(row_id, 0).upper() == 'PLATTER':
                         typeMenu = 'PLATTER'
                     elif sheet.cell_value(row_id, 0).upper() == 'DRINKS':
