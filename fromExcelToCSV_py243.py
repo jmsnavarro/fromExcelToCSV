@@ -11,7 +11,7 @@ Developed using Visual Studio Code with Python extension.
 This script targets python 2.4.3.
 
 ## Source file requirements
-1. Will only accept *.xls Excel files and not *.xlsx.
+1. Will only accept *.xls Excel files and not *.xlsx
 2. Source must be placed on the same directory as the python script
 3. To modify default filename, update SRC_FILENAME variable
 4. First sheet name must be a month name (e.g. January)
