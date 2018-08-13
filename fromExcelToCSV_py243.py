@@ -19,14 +19,14 @@ Based from https://dzone.com/articles/using-python-to-extract-excel-spreadsheet-
 7. Data rows are read from 'A' to 'F' cells where 'A' cell values must be numeric
 
 ## How to run:
-$ python exceltocsv.py
+$ python fromExcelToCSV_py243.py
 
 ## Output: csv and log files
 YYYYMMsrc_filename.csv
-(e.g. 201801FREQUENT_TRAVELER_MONTHLY.csv)
+(e.g. 201804FOOD_MENU.csv)
 
 YYYYMMDD_HHMMHH_exceltocsv.py.log
-(e.g. 20180805_070007_fromExcelToCSV_py243.log)
+(e.g. 20180402_080012_fromExcelToCSV_py243.log)
 """
 
 import csv
