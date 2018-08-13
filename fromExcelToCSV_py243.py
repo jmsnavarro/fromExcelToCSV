@@ -117,11 +117,12 @@ def main():
             rowcount = 0
             for row_id in range(sheet.nrows):
                 # get type of menu
-                if isinstance(sheet.cell_value(row_id, 0), str):
-                    if sheet.cell_value(row_id, 0).upper() == 'PLATTER':
-                        typeMenu = 'PLATTER'
-                    elif sheet.cell_value(row_id, 0).upper() == 'DRINKS':
-                            typeMenu = 'DRINKS'
+                # typeMenuVal = str(sheet.cell_value(row_id, 0))
+                #if isinstance(sheet.cell_value(row_id, 0) , str):
+                if sheet.cell_value(row_id, 0) == 'PLATTER':
+                    typeMenu = 'PLATTER'
+                elif sheet.cell_value(row_id, 0) == 'DRINKS':
+                        typeMenu = 'DRINKS'
                 # collect data and write to file
                 if isinstance(sheet.cell_value(row_id, 0), (int, float)):
                     for col_id in range(1, 5):
