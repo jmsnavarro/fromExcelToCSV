@@ -3,7 +3,7 @@
 
 """ Tool that fetch rows from Excel and export to CSV file
 # fromExcelToCSV.py
-A terminal script written in Python that reads Excel rows and export 
+A terminal script written in Python that reads Excel rows and export
 to a pipe-delimited csv file.
 
 Developed using Visual Studio Code with Python extension.
@@ -34,15 +34,16 @@ import os
 import sys
 from datetime import timedelta, datetime    # to calculate runtime
 import time
+import xlrd
 
 # 3rd party module
-# from xlrd import open_workbook              # to read Excel worksheets 
+# from xlrd import open_workbook              # to read Excel worksheets
 #                                             # https://pypi.org/project/xlrd
 #                                             # http://xlrd.readthedocs.io
 
 package_path = 'packages\\xlrd-1.1.0'
 sys.path.append(os.path.join(os.getcwd(), package_path))
-import xlrd
+
 
 # format month name
 def getNumMonthVal(monthName):
@@ -101,8 +102,8 @@ def main():
         print("{}: {}".format(logging.info.__name__.upper(), msg))
         logging.info(msg)
 
-        OUT_FILENAME = "{}{}{}.csv".format(reportYear, 
-                                        reportMonth, 
+        OUT_FILENAME = "{}{}{}.csv".format(reportYear,
+                                        reportMonth,
                                         os.path.splitext(SRC_FILENAME)[0].upper()
                                     )
 
@@ -127,14 +128,14 @@ def main():
                     row.insert(1, reportYear)
                     row.insert(2, typeMenu)
                     writer.writerow(row)
-                    
+
                     rowCount += 1
 
                     msg = "Collecting data from '{}' at row {}".format(typeMenu.title(), row_id)
                     print("{}: {}".format(logging.info.__name__.upper(), msg))
                     logging.info(msg)
                 row = []
-            
+
         # summary
         if rowCount > 0:
             msg = "Done copying {} row(s) to {}".format(rowCount, OUT_FILENAME)
