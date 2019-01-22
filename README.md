@@ -6,15 +6,16 @@ Developed using Visual Studio Code with Python extension.
 
 ## Source file requirements
 1. Source must be placed on the same directory as the python script
-2. To modify default filename, update SRC_FILENAME variable
+2. To modify default filename, update `SRC_FILENAME` variable
 3. First sheet name must be a month name (e.g. January)
-4. Year must be placed at 'E3' cell (e.g. 2018)
-5. Type of menu must be placed at 'A' cell on any row (e.g. International)
-6. Data rows are read from 'A' to 'E' cells where 'A' cell values must be numeric
+4. Year must be placed at `E3` cell (e.g. 2018)
+5. Type of menu must be placed at `A` cell on any row (e.g. International)
+6. Data rows are read from `A` to `E` cells where `A` cell values must be numeric
 
 ## How to run
-
+```
 $ python fromExcelToCSV.py
+```
 
 ## Output: csv and log files
 - YYYYMMSRC_FILENAME.csv
@@ -29,8 +30,9 @@ $ python fromExcelToCSV.py
 - Will only accept *.xls Excel files and not *.xlsx (Excel 2007 or later)
 
 ### How to run
-
+```
 $ python fromExcelToCSV_py243.py
+```
 
 ### Output: csv and log files
 - YYYYMMSRC_FILENAME.csv
