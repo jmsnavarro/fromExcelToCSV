@@ -23,20 +23,3 @@ $ python fromExcelToCSV.py
 
 - YYYYMMDD_HHMMHH_fromExcelToCSV.py.log
 (e.g. 20180402_080012_fromExcelToCSV.py.log)
-
-## For python 2.4.3
-
-### Additional source file requirements
-- Will only accept *.xls Excel files and not *.xlsx (Excel 2007 or later)
-
-### How to run
-```
-$ python fromExcelToCSV_py243.py
-```
-
-### Output: csv and log files
-- YYYYMMSRC_FILENAME.csv
-(e.g. 201804FOOD_MENU.csv)
-
-- YYYYMMDD_HHMMHH_fromExcelToCSV_py243.py.log
-(e.g. 20180402_080012_fromExcelToCSV_py243.py.log)
