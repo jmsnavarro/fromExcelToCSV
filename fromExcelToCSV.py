@@ -34,16 +34,15 @@ import os
 import sys
 from datetime import timedelta, datetime    # to calculate runtime
 import time
-import xlrd
 
 # 3rd party module
+package_path = 'xlrd-1.1.0'
+sys.path.append(os.path.join(os.getcwd(), 'packages', package_path))
+import xlrd
+
 # from xlrd import open_workbook              # to read Excel worksheets
 #                                             # https://pypi.org/project/xlrd
 #                                             # http://xlrd.readthedocs.io
-
-package_path = 'packages\\xlrd-1.1.0'
-sys.path.append(os.path.join(os.getcwd(), package_path))
-
 
 # format month name
 def getNumMonthVal(monthName):
